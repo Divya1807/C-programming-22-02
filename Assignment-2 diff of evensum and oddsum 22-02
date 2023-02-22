@@ -1,0 +1,17 @@
+//difference between evensum and oddsum
+#include<stdio.h>
+main(){
+	int i,num,evensum=0,oddsum=0,diff=0;
+	scanf("%d",&num);
+	i=1;
+	while(i<=num){
+		if(i%2==0)
+		evensum=evensum+i;
+        else
+		oddsum=oddsum+i;
+		i++;
+	}
+	printf("\nevensum=%d\noddsum=%d",evensum,oddsum);
+	diff=evensum-oddsum;
+	printf("\ndifference=%d",diff);
+	}
